@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Interface</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-5xl mt-6">Functional Bapp Er <span
+                class="font-semibold text-violet-800 ">Bank</span>!!!!!!
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-sky-300 p-8 rounded-xl">
+                    <h4 class="text-2xl text-center ">Deposits</h4>
+                    <h3 class="text-5xl">$ <span id="deposit-value">0</span></h3>
+                </div>
+                <div class="bg-violet-300 p-8 rounded-xl">
+                    <h4 class="text-2xl text-center">Withdrawals</h4>
+                    <h3 class="text-5xl">$<span id="withdraw-value">0</span></h3>
+                </div>
+                <div class="bg-indigo-300 p-8 rounded-xl">
+                    <h4 class="text-2xl text-center">Balance</h4>
+                    <h3 class="text-5xl">$<span id="total-value">1240</span></h3>
+                </div>
+            </div>
+        </section>
+        <!-- Deposits and Withdraws section -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-cyan-300 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-3 text-white">Please Deposit</h4>
+                    <div>
+                        <input type="text" name="" id="deposit-input" class="w-9/12 block mb-3 px-3 py-2 rounded-md"
+                            placeholder="Enter deposit amount">
+                        <button id="btn-deposit"
+                            class="block bg-purple-400 px-4 py-3 mt-5 font-medium text-white rounded-lg hover:bg-purple-300 text-white">Submit</button>
+                    </div>
+                </div>
+                <div class="bg-fuchsia-300 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-3 text-white">Please Withdraw</h4>
+                    <div>
+                        <input type="text" name="" id="withdraw-input" class="w-9/12 px-3 py-2 rounded-md"
+                            placeholder="Enter withdrawal amount ">
+                        <button id="btn-withdraw"
+                            class="block bg-rose-400 px-4 py-3 mt-5 font-medium text-white rounded-lg hover:bg-rose-300 text-white">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="text-center mt-12">
+        <p>All right reserved @<span class="text-rose-500">touhidcodes</span> 2023.</p>
+    </footer>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
